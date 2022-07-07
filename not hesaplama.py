@@ -27,11 +27,11 @@ def not_hesapla(satır):
 
 
 
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/dosya.txt","r",encoding="utf-8") as file:
+with open("dosya.txt","r",encoding="utf-8") as file:
     eklenecekler_listesi = []
     for i in file:
         eklenecekler_listesi.append(not_hesapla(i))
     print(eklenecekler_listesi)     
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/notlar.txt","w",encoding="utf-8") as file2:
+with open("not hesaplama/notlar.txt","w",encoding="utf-8") as file2:
    for i in eklenecekler_listesi:  
      file2.write(i)
