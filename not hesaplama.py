@@ -35,7 +35,7 @@ def not_hesapla(satır):
  
 
 
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/dosya.txt","r",encoding="utf-8") as file:
+with open("dosya.txt","r",encoding="utf-8") as file:
     eklenecekler_listesi = []
     kalanlar_listesi = []
     gecenler_listesi = []
@@ -44,12 +44,12 @@ with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/dosya.txt"
     print(eklenecekler_listesi)   
       
     print ("kalanlar\n",kalanlar_listesi)
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/notlar.txt","w",encoding="utf-8") as file2:
+with open("notlar.txt","w",encoding="utf-8") as file2:
    for i in eklenecekler_listesi:  
      file2.write(i)
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/kalanlar.txt","w",encoding="utf-8") as file3:
+with open("kalanlar.txt","w",encoding="utf-8") as file3:
     for a in kalanlar_listesi:
         file3.write(a)     
-with open("c:/Users/akbul/Desktop/python/nesne tabanlı/not hesaplama/geçenler.txt","w",encoding="utf-8") as file4:
+with open("geçenler.txt","w",encoding="utf-8") as file4:
      for b in gecenler_listesi:
         file4.write(b)
